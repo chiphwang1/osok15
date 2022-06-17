@@ -42,7 +42,6 @@ variable "node_compartment_ocid" {
 }
 variable "dynamic_group_name" {
     type = string
-    default = "mesh_osok"
 }
 variable "dynamic_group_description" {
     type = string
@@ -60,7 +59,6 @@ variable "policy_description" {
 
 variable "policy_name" {
     type = string
-    default = "osok_policy"
 }
 
 
