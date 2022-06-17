@@ -27,11 +27,6 @@ variable "app_name" {
 }
 
 
-variable "release" {
-  description = "Reference Architecture Release (OCI Architecture Center)"
-  default     = "1.0.3"
-}
-
 
 
 # variables for dynamic group
