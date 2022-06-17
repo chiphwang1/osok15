@@ -316,11 +316,54 @@ variables:
   
  
 
+  tenancy_ocid_osok:
+    type: string
+    title: "tenancy for your account "
+    description: "tenancy for dynamic group"
+    required: true
+    visible: 
+      
+
+  policy_name:
+    type: string
+    title: "name of your OSOK policy"
+    description: "name for OSOK policy"
+    required: true
+    visible: 
+     
+
+  policy_description:
+    type:  string
+    title: "name of your OSOK policy"
+    description: "name for OSOK policy"
+    required: true
+    visible: 
   
-  
+  dynamic_group_name:
+    type: string
+    description: "name for dynamic group"
+    default: "mesh_osok"
+    required: true
+    visible: 
 
 
-  
+    
+  dynamic_group_description:
+    type: string
+    title: "description of dynamic group"
+    default: "dynamic group for nodes in your compartment"
+    required: true
+    visible: 
+
+  node_compartment_ocid:
+    type: string
+    title: "compartment id of your OKE worker nodes"
+    required: true
+    visible: 
+
+
+
+
   
   
 
