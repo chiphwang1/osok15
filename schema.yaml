@@ -22,9 +22,15 @@ variableGroups:
   - network_cidrs
 
 
-
-
-
+- title: Dynamic Group Configuration
+  visible: true 
+  variables:
+    - node_compartment_ocid
+    - dynamic_group_name
+    - dynamic_group_description
+    - policy_name
+    - policy_description
+    - tenancy_ocid_osok 
 
 - title: OKE Cluster Configuration
   visible: true 
