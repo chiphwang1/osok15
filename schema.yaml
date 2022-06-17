@@ -21,17 +21,6 @@ variableGroups:
   - private_key_path
   - network_cidrs
 
-
-- title: Dynamic Group Configuration
-  visible: true 
-  variables:
-    - node_compartment_ocid
-    - dynamic_group_name
-    - dynamic_group_description
-    - policy_name
-    - policy_description
-    - tenancy_ocid_osok 
-
 - title: OKE Cluster Configuration
   visible: true 
   variables:
@@ -44,6 +33,16 @@ variableGroups:
     - cluster_workers_visibility
     - cluster_endpoint_visibility
     - k8s_version
+
+- title: Dynamic Group Configuration
+  visible: true 
+  variables:
+    - node_compartment_ocid
+    - dynamic_group_name
+    - dynamic_group_description
+    - policy_name
+    - policy_description
+    - tenancy_ocid_osok 
 
 - title: OKE Worker Nodes Configuration
   visible: true 
@@ -300,19 +299,6 @@ variables:
       and:
         - create_new_oke_cluster
         - show_advanced
-
-  
-
-  
-  project_description:
-    type: string
-    title: "Project Description"
-    description: "A short description for the project"
-    default: "Project for OKE deployment"
-    required: false
-    visible: 
-      and:
-        - show_advanced
   
  
 
@@ -342,12 +328,10 @@ variables:
   dynamic_group_name:
     type: string
     description: "name for dynamic group"
-    default: "mesh_osok"
     required: true
     visible: 
 
 
-    
   dynamic_group_description:
     type: string
     title: "description of dynamic group"
