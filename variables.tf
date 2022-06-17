@@ -22,12 +22,6 @@ variable "region" {
 
 
 
-variable "app_name" {
-  default = "test"
-}
-
-
-
 
 # variables for dynamic group
 # variable for ocid of compartment that holds OKE cluster

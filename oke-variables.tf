@@ -98,10 +98,7 @@ variable "node_pool_node_shape_config_memory_in_gbs" {
   default     = "16" # Only used if flex shape is selected
   description = "You can customize the amount of memory allocated to a flexible shape"
 }
-variable "node_pool_boot_volume_size_in_gbs" {
-  default     = "60"
-  description = "Specify a custom boot volume size (in GB)"
-}
+
 variable "image_operating_system" {
   default     = "Oracle Linux"
   description = "The OS/image installed on all nodes in the node pool."
