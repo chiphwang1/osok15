@@ -35,6 +35,9 @@ chmod +x operator-sdk_${OS}_${ARCH} && mv operator-sdk_${OS}_${ARCH} ./operator-
 # Create Namespace oci-service-operator-system
 kubectl create ns oci-service-operator-system 
 
+# Pull dockert image
+ docker pull iad.ocir.io/oracle/oci-service-operator-bundle:1.1.1
+
 # install OSOK Operator
-./operator-sdk run bundle iad.ocir.io/oracle/oci-service-operator-bundle:1.1.0 -n oci-service-operator-system --timeout 10m
+./operator-sdk run bundle iad.ocir.io/oracle/oci-service-operator-bundle:1.1.1 -n oci-service-operator-system --timeout 10m
 
